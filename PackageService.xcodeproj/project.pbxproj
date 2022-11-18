@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E72227D2927AC75004EA5DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E72227C2927AC75004EA5DC /* GoogleService-Info.plist */; };
 		AD5DDE6B2923578F00F682BB /* PackageServiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5DDE6A2923578F00F682BB /* PackageServiceApp.swift */; };
 		AD5DDE6D2923578F00F682BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5DDE6C2923578F00F682BB /* ContentView.swift */; };
 		AD5DDE6F2923579000F682BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD5DDE6E2923579000F682BB /* Assets.xcassets */; };
@@ -15,7 +16,6 @@
 		AD5DDE862923579000F682BB /* PackageServiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5DDE852923579000F682BB /* PackageServiceUITests.swift */; };
 		AD5DDE882923579000F682BB /* PackageServiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5DDE872923579000F682BB /* PackageServiceUITestsLaunchTests.swift */; };
 		AD9751662924EEB700785F97 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = AD9751652924EEB700785F97 /* FirebaseAnalytics */; };
-		AD9751682924EEEA00785F97 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD9751672924EEE900785F97 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E72227C2927AC75004EA5DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AD5DDE672923578F00F682BB /* PackageService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PackageService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD5DDE6A2923578F00F682BB /* PackageServiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageServiceApp.swift; sourceTree = "<group>"; };
 		AD5DDE6C2923578F00F682BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,7 +47,6 @@
 		AD5DDE812923579000F682BB /* PackageServiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PackageServiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD5DDE852923579000F682BB /* PackageServiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageServiceUITests.swift; sourceTree = "<group>"; };
 		AD5DDE872923579000F682BB /* PackageServiceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageServiceUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		AD9751672924EEE900785F97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 		AD5DDE692923578F00F682BB /* PackageService */ = {
 			isa = PBXGroup;
 			children = (
-				AD9751672924EEE900785F97 /* GoogleService-Info.plist */,
+				7E72227C2927AC75004EA5DC /* GoogleService-Info.plist */,
 				AD5DDE6A2923578F00F682BB /* PackageServiceApp.swift */,
 				AD5DDE6C2923578F00F682BB /* ContentView.swift */,
 				AD5DDE6E2923579000F682BB /* Assets.xcassets */,
@@ -244,7 +244,7 @@
 			files = (
 				AD5DDE722923579000F682BB /* Preview Assets.xcassets in Resources */,
 				AD5DDE6F2923579000F682BB /* Assets.xcassets in Resources */,
-				AD9751682924EEEA00785F97 /* GoogleService-Info.plist in Resources */,
+				7E72227D2927AC75004EA5DC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,7 +431,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PackageService/Preview Content\"";
-				DEVELOPMENT_TEAM = 277QUM3J2F;
+				DEVELOPMENT_TEAM = PH6U8QB8RH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -439,6 +439,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,7 +463,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PackageService/Preview Content\"";
-				DEVELOPMENT_TEAM = 277QUM3J2F;
+				DEVELOPMENT_TEAM = PH6U8QB8RH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -470,6 +471,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
