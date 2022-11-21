@@ -10,6 +10,7 @@ import Firebase
 
 @main
 struct PackageServiceApp: App {
+    @StateObject var firestoreManager = FireStoreManager()
     
     init() {
         FirebaseApp.configure()
@@ -18,6 +19,7 @@ struct PackageServiceApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(firestoreManager)
         }
     }
 }

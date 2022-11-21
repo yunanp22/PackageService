@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7E72227D2927AC75004EA5DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E72227C2927AC75004EA5DC /* GoogleService-Info.plist */; };
+		AD47F4A5292B996700B16564 /* FireStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD47F4A4292B996700B16564 /* FireStoreManager.swift */; };
 		AD5DDE6B2923578F00F682BB /* PackageServiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5DDE6A2923578F00F682BB /* PackageServiceApp.swift */; };
 		AD5DDE6D2923578F00F682BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5DDE6C2923578F00F682BB /* ContentView.swift */; };
 		AD5DDE6F2923579000F682BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD5DDE6E2923579000F682BB /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		7E72227C2927AC75004EA5DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AD47F4A4292B996700B16564 /* FireStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStoreManager.swift; sourceTree = "<group>"; };
 		AD5DDE672923578F00F682BB /* PackageService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PackageService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD5DDE6A2923578F00F682BB /* PackageServiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageServiceApp.swift; sourceTree = "<group>"; };
 		AD5DDE6C2923578F00F682BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				AD5DDE6C2923578F00F682BB /* ContentView.swift */,
 				AD5DDE6E2923579000F682BB /* Assets.xcassets */,
 				AD5DDE702923579000F682BB /* Preview Content */,
+				AD47F4A4292B996700B16564 /* FireStoreManager.swift */,
 			);
 			path = PackageService;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD47F4A5292B996700B16564 /* FireStoreManager.swift in Sources */,
 				AD5DDE6D2923578F00F682BB /* ContentView.swift in Sources */,
 				AD5DDE6B2923578F00F682BB /* PackageServiceApp.swift in Sources */,
 			);

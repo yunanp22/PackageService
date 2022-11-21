@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct AuthView: View {
+    @State var email = ""
+    @State var pw = ""
+    @ObservableObject var viewModel = AuthViewModel()
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.red)
-            Text("Hello??????!!!!??")
+            TextField
         }
         .padding()
     }
