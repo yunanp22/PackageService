@@ -17,12 +17,12 @@ struct AuthView: View {
     @ObservedObject var viewModel = AuthViewModel()
     var body: some View {
         VStack {
-            TextField("id", text: $email)
+            TextField("id", text: $id)
             SecureField("PW", text: $password)
             TextField("email", text: $email)
-            TextField("nickName", text: $email)
-            TextField("name", text: $email)
-            TextField("address", text: $email)
+            TextField("nickName", text: $nickName)
+            TextField("name", text: $name)
+            TextField("address", text: $address)
             Button {
                 viewModel.registerUser(id, password, nickName, address, email, name)
             } label: {
