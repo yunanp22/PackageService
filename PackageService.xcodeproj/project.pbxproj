@@ -18,7 +18,6 @@
 		AD5DDE7C2923579000F682BB /* PackageServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5DDE7B2923579000F682BB /* PackageServiceTests.swift */; };
 		AD5DDE862923579000F682BB /* PackageServiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5DDE852923579000F682BB /* PackageServiceUITests.swift */; };
 		AD5DDE882923579000F682BB /* PackageServiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5DDE872923579000F682BB /* PackageServiceUITestsLaunchTests.swift */; };
-		AD9751662924EEB700785F97 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = AD9751652924EEB700785F97 /* FirebaseAnalytics */; };
 		C10209DE4A5D39A2C563DAB7 /* Pods_PackageService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301F32AF8D2BD982D69AA9B7 /* Pods_PackageService.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,7 +67,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD9751662924EEB700785F97 /* FirebaseAnalytics in Frameworks */,
 				C10209DE4A5D39A2C563DAB7 /* Pods_PackageService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,7 +100,6 @@
 				8F9E8A320FA47A3D076CC367 /* Pods-PackageServiceTests.debug.xcconfig */,
 				BE17D49F7C66E2E4F2C3279C /* Pods-PackageServiceTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -131,12 +128,12 @@
 		AD5DDE692923578F00F682BB /* PackageService */ = {
 			isa = PBXGroup;
 			children = (
+				AD47F4A4292B996700B16564 /* AuthViewModel.swift */,
 				7E72227C2927AC75004EA5DC /* GoogleService-Info.plist */,
 				AD5DDE6A2923578F00F682BB /* PackageServiceApp.swift */,
 				AD5DDE6C2923578F00F682BB /* AuthView.swift */,
 				AD5DDE6E2923579000F682BB /* Assets.xcassets */,
 				AD5DDE702923579000F682BB /* Preview Content */,
-				AD47F4A4292B996700B16564 /* AuthViewModel.swift */,
 			);
 			path = PackageService;
 			sourceTree = "<group>";
@@ -187,15 +184,13 @@
 				AD5DDE632923578F00F682BB /* Sources */,
 				AD5DDE642923578F00F682BB /* Frameworks */,
 				AD5DDE652923578F00F682BB /* Resources */,
+				5D86507BC3EB76977DFE4D86 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = PackageService;
-			packageProductDependencies = (
-				AD9751652924EEB700785F97 /* FirebaseAnalytics */,
-			);
 			productName = PackageService;
 			productReference = AD5DDE672923578F00F682BB /* PackageService.app */;
 			productType = "com.apple.product-type.application";
@@ -227,6 +222,7 @@
 				AD5DDE7D2923579000F682BB /* Sources */,
 				AD5DDE7E2923579000F682BB /* Frameworks */,
 				AD5DDE7F2923579000F682BB /* Resources */,
+				EFBEC365914D610D4F80B5C7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -270,9 +266,6 @@
 				Base,
 			);
 			mainGroup = AD5DDE5E2923578F00F682BB;
-			packageReferences = (
-				AD9751642924EEB700785F97 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-			);
 			productRefGroup = AD5DDE682923578F00F682BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -356,6 +349,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5D86507BC3EB76977DFE4D86 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PackageService/Pods-PackageService-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PackageService/Pods-PackageService-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PackageService/Pods-PackageService-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EC44185BB5C03A5A4DF779B2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -376,6 +386,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFBEC365914D610D4F80B5C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PackageService-PackageServiceUITests/Pods-PackageService-PackageServiceUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PackageService-PackageServiceUITests/Pods-PackageService-PackageServiceUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PackageService-PackageServiceUITests/Pods-PackageService-PackageServiceUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -724,25 +751,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		AD9751642924EEB700785F97 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		AD9751652924EEB700785F97 /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AD9751642924EEB700785F97 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AD5DDE5F2923578F00F682BB /* Project object */;
 }
